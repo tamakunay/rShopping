@@ -1,8 +1,5 @@
-
 import { CartItemType } from '../../types/Cart'
 import { Wrapper } from './Item.styles'
-
-
 
 type ItemProp = {
     item: CartItemType,

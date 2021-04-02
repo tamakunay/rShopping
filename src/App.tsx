@@ -1,5 +1,5 @@
 import { CircularProgress } from '@material-ui/core';
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useQuery } from 'react-query'
 // import Drawer from '@material-ui/core/Drawer';
 import Grid from '@material-ui/core/Grid';
@@ -20,11 +20,11 @@ const App = () => {
   console.log(data)
 
   // get total items from
-  const getTotalItems = () => null
+  // const getTotalItems = () => null
 
   const handleAddToCart = (selectedItem: CartItemType) => null
 
-  const handleRemoveFromCart = () => null
+  // const handleRemoveFromCart = () => null
 
   if (isLoading) return <CircularProgress />
   if (error) return <div>something went wrong</div>
