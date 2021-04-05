@@ -1,5 +1,6 @@
 import { CartItemType } from '../../types/Cart'
 import { Wrapper } from './Item.styles'
+import Button from '@material-ui/core/Button'
 
 type ItemProp = {
     item: CartItemType,
@@ -32,6 +33,8 @@ const Item: React.FC<ItemProp> = ({ item, handleAddToCart }) => (
             <p>{item.description}</p>
             <h3>${item.price}</h3>
         </div>
+
+        <Button onClick={() => handleAddToCart(item)}>Add to cart</Button>
 
     </Wrapper>
 )
